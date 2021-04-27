@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for n in range(0, 99):
-    print(n, '=', hex(n))
+for numbers in range(0, 99):
+    print(numbers, '=', hex(numbers))

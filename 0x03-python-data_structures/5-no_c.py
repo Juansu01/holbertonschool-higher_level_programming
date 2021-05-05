@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 def no_c(my_string):
 
     nocstring = ""
@@ -9,5 +7,4 @@ def no_c(my_string):
         if i == "c" or i == "C":
             i = ""
         nocstring += i
-
     return nocstring

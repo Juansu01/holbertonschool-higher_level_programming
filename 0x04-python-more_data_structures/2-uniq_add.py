@@ -12,4 +12,4 @@ def uniq_add(my_list=[]):
         for number in unique_numbers:
             list_unique_numbers.append(number)
 
-    return sum(list_unique_numbers)
+        return sum(list_unique_numbers)

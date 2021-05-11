@@ -3,4 +3,4 @@ In this repo you will find files containing programs I created for learning pyth
 
 # Folders 🗃️
 
-- **0x00-python-hello_world** This folder contains my first programs using python and shell scripts.
+- **0x00-python-hello_world** This folder contains my first programs using python and shell scripts. TEST

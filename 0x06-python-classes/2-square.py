@@ -5,8 +5,7 @@ Class defining a square
 
 
 class Square():
-    __size = None
-    area = None
+
     """ This class defines a size and area for Square """
     def __init__(self, __size=0):
         if not type(__size) is int:

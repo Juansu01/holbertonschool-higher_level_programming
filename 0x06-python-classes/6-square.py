@@ -63,14 +63,16 @@ class Square():
         """
         if self.__size != 0:
             if self.__position[1] > 0:
-                for i in range(self.__position[1]):
+                for newlines in range(self.__position[1]):
                     print("")
-            for j in range(self.__size):
-                for x in range(self.__position[0]):
+            for size in range(self.__size):
+                for spaces in range(self.__position[0]):
                     print(" ", end="")
-                for y in range(self.__size):
+                for hastags in range(self.__size):
                     print("#", end="")
                 print("")
+        else:
+            print("")
 # for i in range(self.__size):
 #    for j in range(self.__size):
 #       print("#", end="")

@@ -5,6 +5,9 @@ This class defines a rectangle with a width and height
 
 
 class Rectangle():
+    """
+    Sets height, width and calculates area and perimeter
+    """
 
     def __init__(self, width=0, height=0):
         self.height = height
@@ -21,7 +24,6 @@ class Rectangle():
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
 
     @property
     def width(self, value):

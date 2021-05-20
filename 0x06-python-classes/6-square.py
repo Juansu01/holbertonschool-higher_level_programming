@@ -7,7 +7,7 @@ Class defining a square
 class Square():
 
     """ This class assigns size to square and calculates its area """
-    def __init__(self, __size=0, __position=(0, 0)):
+    def __init__(self, __size=0, position=(0, 0)):
         if not type(__size) is int:
             raise TypeError("size must be an integer")
         if __size < 0:
@@ -16,7 +16,7 @@ class Square():
             self.__size = __size
         else:
             self.__size = __size
-            self.__position = __position
+            self.position = position
 
     def area(self):
         """

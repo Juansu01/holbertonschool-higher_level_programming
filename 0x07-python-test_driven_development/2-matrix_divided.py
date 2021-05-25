@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+'''
+This module defines a function that divides a matrix by a number.
+'''
 
 
 def matrix_divided(matrix, div):
-
+    '''Function takes a matrix and a number as input, then returns
+    a copy of the matrix with the result of the division.
+    '''
     if type(matrix) is not list:
         raise TypeError("matrix must be a matrix\
  (list of lists) of integers/floats")
@@ -13,6 +18,9 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of the matrix \
 must have the same size")
     for row in matrix:
+        if type(row) is not list:
+            raise TypeError("matrix must be a ma\
+trix (list of lists) of integers/floats")
         for nu in row:
             if type(nu) is not int and type(nu) is not float:
                 raise TypeError("matrix must be a ma\

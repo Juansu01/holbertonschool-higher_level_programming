@@ -1,4 +1,10 @@
+Testing ```add_integer``` function.
+    
+Importing function:
+
     >>> add_integer = __import__("0-add_integer").add_integer
+
+Testing with expected input:
 
     >>> add_integer(1, 2)
     3
@@ -11,3 +17,27 @@
 
     >>> add_integer(100.3, -2)
     98
+
+Testing with unexpected data types:
+
+    >>> add_integer("Holberton", -2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(3, "Hello")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Testing with no arguments and none argument
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer

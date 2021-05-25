@@ -5,13 +5,13 @@ def matrix_divided(matrix, div):
 
     if type(matrix) is not list:
         raise TypeError("matrix must be a matrix\
-             (list of lists) of integers/floats")
+ (list of lists) of integers/floats")
     if len(matrix) == 1:
         raise TypeError("matrix must be a matrix\
-             (list of lists) of integers/floats")
+ (list of lists) of integers/floats")
     if len(matrix[0]) != len(matrix[1]):
         raise TypeError("Each row of the matrix \
-            must have the same size")
+must have the same size")
     for row in matrix:
         for nu in row:
             if type(nu) is not int and type(nu) is not float:

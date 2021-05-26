@@ -4,18 +4,10 @@ Importing function:
 
     >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-Using function with expected input:
+Using function with unexpected input:
 
-    >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
-    Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
-    Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed""")
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-    Quonam modo?
-
-    Utrum igitur tibi litteram videor an totas paginas commovere?
-
-    Non autem hoc:
-
-    igitur ne illud quidem.
+    >>> text_indentation(33)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
 

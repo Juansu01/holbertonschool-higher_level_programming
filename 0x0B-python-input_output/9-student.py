@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""This module defines a class called Student """
 
 class Student():
     """ This class defines name, last_name and age

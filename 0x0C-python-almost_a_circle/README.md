@@ -1,4 +1,4 @@
-# In this project I'll go over the following topics.
+# In this project I'll go over the following topics. 
 
 - Import
 - Exceptions

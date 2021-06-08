@@ -86,7 +86,10 @@ class Rectangle(Base):
     def display(self):
         """This public method displays a
         rectangle using hashtags."""
+        number_spaces = self.__x
+        print("\n" * self.__y, end="")
         for n_rows in range(self.__height):
+            print(" " * number_spaces, end="")
             print("#" * self.__width)
 
     def __str__(self):

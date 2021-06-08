@@ -88,3 +88,8 @@ class Rectangle(Base):
         rectangle using hashtags."""
         for n_rows in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """Overriding the string method."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)

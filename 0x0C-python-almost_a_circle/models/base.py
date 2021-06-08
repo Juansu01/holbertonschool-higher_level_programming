@@ -3,6 +3,7 @@
 
 
 class Base():
+    """Class base that defines an id."""
 
     __nb_objects = 0
 

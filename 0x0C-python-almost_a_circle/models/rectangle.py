@@ -73,3 +73,10 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         else:
             self.__y = value
+
+    """Public methods."""
+
+    def area(self):
+        """This public method returns the area
+        of a triangle."""
+        return self.__width * self.__height

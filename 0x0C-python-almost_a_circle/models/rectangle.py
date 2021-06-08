@@ -80,3 +80,9 @@ class Rectangle(Base):
         """This public method returns the area
         of a triangle."""
         return self.__width * self.__height
+
+    def display(self):
+        """This public method displays a
+        rectangle using hashtags."""
+        for n_rows in range(self.__height):
+            print("#" * self.__width)

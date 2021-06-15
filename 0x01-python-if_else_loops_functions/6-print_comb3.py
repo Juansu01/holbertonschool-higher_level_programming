@@ -8,7 +8,7 @@ for i in range(0, 9):
         if i == j:
             continue
         if i == 8 and j == 9:
-            print("{}{} ".format(i, j), end="")
+            print("{}{}".format(i, j), end="")
             continue
         if i != j:
             print("{}{}, ".format(i, j), end="")

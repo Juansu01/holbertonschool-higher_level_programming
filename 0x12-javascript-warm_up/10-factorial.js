@@ -11,7 +11,7 @@ function factorialize (num) {
 }
 
 if (isNaN(parseInt(process.argv[2]))) {
-  console.log('NaN');
+  console.log('1');
 } else {
   console.log(factorialize(a));
 }

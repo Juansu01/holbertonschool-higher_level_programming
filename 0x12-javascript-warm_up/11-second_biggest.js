@@ -9,11 +9,11 @@ if (process.argv.length === 2) {
   console.log('0');
 } else {
   for (let i = 2; i < process.argv.length; i++) {
-    if (process.argv[i] > biggest) {
+    if (process.argv[i] >= biggest) {
       secondBiggest = biggest;
       biggest = process.argv[i];
-    } else {
-      continue;
+    } else if (process.argv[i] > secondBiggest){
+      secondBiggest = process.argv[i];
     }
   }
   console.log(secondBiggest);

@@ -12,8 +12,10 @@ if (process.argv.length === 2) {
     if (process.argv[i] >= biggest) {
       secondBiggest = biggest;
       biggest = process.argv[i];
-    } else if (process.argv[i] > secondBiggest){
+    } else if (process.argv[i] > secondBiggest) {
       secondBiggest = process.argv[i];
+    } else {
+        continue;
     }
   }
   console.log(secondBiggest);

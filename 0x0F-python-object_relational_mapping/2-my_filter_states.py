@@ -19,6 +19,7 @@ if __name__ == "__main__":
         ORDER BY id ASC".format(uinput_state))
     query_rows = cur.fetchall()
     for row in query_rows:
-        print(row)
+        if row[1] == uinput_state:
+            print(row)
     cur.close()
     conn.close()

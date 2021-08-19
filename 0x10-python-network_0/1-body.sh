@@ -1,3 +1,3 @@
-#!binbash
-# Display the body when redirected                                                                    
+#!/bin/bash
+# Display the body when redirected
 curl -Ls $1

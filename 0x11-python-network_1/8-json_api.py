@@ -12,7 +12,7 @@ if __name__ == "__main__":
     try:
         req = requests.post('http://0.0.0.0:5000/search_user', data=da)
         my_json = req.json()
-        if 'id' in my_json and 'name' in my_json:
+        if 'id' in my_json or 'name' in my_json:
             print("[{}] {}".format(my_json.get('id'), my_json.get('name')))
         else:
             print("No result")

@@ -10,4 +10,4 @@ if __name__ == "__main__":
             resp = response.read()
             print(resp.decode('utf-8'))
     except urllib.error.HTTPError as my_err:
-        print('Error code: {}'.format(my_err))
+        print('Error code: {}'.format(my_err.code))

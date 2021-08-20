@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """ This module sends a get requests and displays errors if encountered """
 if __name__ == "__main__":
-    import request
+    import requests
     from sys import argv
-    from requests.exceptions import HTTPError
     url = argv[1]
     r = requests.get(url)
     if r.status_code > 400:

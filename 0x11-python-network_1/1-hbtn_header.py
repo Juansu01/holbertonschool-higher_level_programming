@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This script displays the value of the id variable """
 
 if __name__ == "__main__":
     import urllib.request

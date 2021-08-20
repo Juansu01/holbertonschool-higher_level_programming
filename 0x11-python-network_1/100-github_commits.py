@@ -6,7 +6,8 @@ if __name__ == "__main__":
 
     owner = argv[2]
     repo = argv[1]
-    query_url = "https://api.github.com/repos/{}/{}/commits".format(owner, repo)
+    query_url = "https://api.github.com/repos/{}/{}/commits".format(
+                                                                owner, repo)
     r = requests.get(query_url)
     d = r.json()
     try:

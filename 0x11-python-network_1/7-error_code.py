@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" This module sends a get requests and displays errors if encountered """
 if __name__ == "__main__":
     import request
     from sys import argv

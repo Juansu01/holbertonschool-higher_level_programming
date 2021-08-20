@@ -9,9 +9,12 @@ if __name__ == "__main__":
     query_url = "https://api.github.com/repos/{}/{}/commits".format(owner, repo)
     r = requests.get(query_url)
     d = r.json()
-    for commit in d:
-        for val in range(0, 10):
-            print(
-                "{}: {}".format(
-                    d[val]["sha"], d[val]["commit"]["author"]["name"]))
-        break
+    try:
+        for commit in d:
+            for val in range(0, 10):
+                print(
+                    "{}: {}".format(
+                        d[val]["sha"], d[val]["commit"]["author"]["name"]))
+            break
+    except:
+        pass

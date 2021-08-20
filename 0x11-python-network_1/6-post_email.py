@@ -3,6 +3,6 @@
 if __name__ == "__main__":
     from sys import argv
     import requests
-    r = requests.post(argv[1], data={'email': argv[2]})
-    content = r.text
-    print(content)
+    ema = {'email': argv[2]}
+    r = requests.post(argv[1], data=ema)
+    print(r.text)

@@ -4,8 +4,8 @@ if __name__ == "__main__":
     import requests
     from sys import argv
 
-    owner = argv[1]
-    repo = argv[2]
+    owner = argv[2]
+    repo = argv[1]
     query_url = f"https://api.github.com/repos/{owner}/{repo}/commits"
     r = requests.get(query_url)
     d = r.json()
